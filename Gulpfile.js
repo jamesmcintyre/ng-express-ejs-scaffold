@@ -15,7 +15,7 @@ var config = {
   paths: {
     js: './src/js/**/*.js',
     sass: './src/css/**/*.scss',
-    html: './src/partials/**/*.html'
+    html: './src/html/**/*.html'
   }
 };
 
@@ -51,7 +51,7 @@ gulp.task('css', ['clean-css'], function() {
 
 gulp.task('html', ['clean-html'], function() {
   return gulp.src(config.paths.html)
-    .pipe(gulp.dest('./public/partials'));
+    .pipe(gulp.dest('./public/html/'));
 });
 
 gulp.task('watch', function() {
